@@ -1,6 +1,6 @@
 import { MetaService } from './../services/meta.service';
 import { Component, inject } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ActivatedRoute, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   private metaService = inject(MetaService);
+  private activeRoute = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.metaService.initMetaTagsHandling();

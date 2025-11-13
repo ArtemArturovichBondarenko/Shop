@@ -8,7 +8,7 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        title: 'Main | Art',
+        title: 'Main',
         data: {
           meta: [
             { name: 'discription', content: 'home page site' },
@@ -22,7 +22,7 @@ export const routes: Routes = [
       },
       {
         path: 'categories',
-        title: 'Сategories | Art',
+        title: 'Сategories',
         data: {
           meta: [
             { name: 'discription', content: 'goods category ' },
