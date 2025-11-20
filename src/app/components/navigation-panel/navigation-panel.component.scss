@@ -1,0 +1,16 @@
+.wrap-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+}
+
+.wrap-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

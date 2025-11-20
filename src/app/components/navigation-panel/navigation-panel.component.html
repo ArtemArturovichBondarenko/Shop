@@ -1,18 +1,24 @@
-<img src="/assets/logo.png" alt="company logo" />
-<input name="main_theme" type="checkbox" />
-<div>
-  <p>1 day discount</p>
-  <div>
-    <a routerLink="">Main Page</a>
-    <a routerLink="categories">Catigoryes</a>
-    <a routerLink="products">All products</a>
-    <a routerLink="sales">All sales</a>
+<div class="main-loyaout wrap-nav">
+  <div class="wrap-logo">
+    <img src="/assets/logo.png" alt="company logo" />
+    <theme-toggle></theme-toggle>
   </div>
-</div>
-<div>
-  <a href="like"><img src="" alt="like" /></a>
-</div>
-<div>
-  <a href="basket"><img src="" alt="basket" /></a>
+  <div class="wrap-links">
+    <p>1 day discount</p>
+    <nav>
+      <a routerLink="">Main Page</a>
+      <a routerLink="categories">Catigoryes</a>
+      <a routerLink="products">All products</a>
+      <a routerLink="sales">All sales</a>
+    </nav>
+  </div>
+  <div>
+    <div>
+      <a href="like"><img src="" alt="like" />like</a>
+    </div>
+    <div>
+      <a href="basket"><img src="" alt="basket" />basket</a>
+    </div>
+  </div>
 </div>
 <app-breadcrumbs></app-breadcrumbs>

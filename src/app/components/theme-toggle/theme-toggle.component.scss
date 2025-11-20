@@ -1,0 +1,67 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 15px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* Фон перемикача */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #bfbfbf;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+
+  /* Коло */
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+
+  /* 🌞 Сонце (зліва) */
+  .slider::after {
+    content: "🌞";
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    font-size: 18px;
+    opacity: 1;
+    transition: 0.4s;
+  }
+
+  /* 🌙 Місяць (зправа) — показується коли включено */
+  input:checked + .slider::after {
+    content: "🌙";
+    left: auto;
+    right: 8px;
+  }
+
+  /* Фон активний */
+  input:checked + .slider {
+    background-color: #4a4a4a;
+  }
+
+  /* Переміщення кола */
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+}
