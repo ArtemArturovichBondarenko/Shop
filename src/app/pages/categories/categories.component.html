@@ -1,1 +1,15 @@
 <p>categories works!</p>
+<section class="category-list">
+  @for (category of categories$ | async; track category.id; let last = $last) {
+    @if (!last) {
+      <div class="category">
+        <img
+          class="category-img"
+          [src]="category.image"
+          [alt]="category.title"
+        />
+        <h1>{{ category.title }}</h1>
+      </div>
+    }
+  }
+</section>

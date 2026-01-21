@@ -1,0 +1,14 @@
+.category-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  text-align: center;
+}
+
+.category-img {
+  height: 350px;
+  width: 316px;
+  object-fit: cover;
+}

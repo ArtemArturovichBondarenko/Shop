@@ -1,0 +1,19 @@
+{
+  "/category_img": {
+    "target": "https://shop-back-ehrn.onrender.com",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/api": {
+    "target": "https://shop-back-ehrn.onrender.com",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/product_img": {
+    "target": "http://localhost:4200",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
